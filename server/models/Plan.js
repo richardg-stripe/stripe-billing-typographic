@@ -164,7 +164,7 @@ class Plan extends Model {
           createdPlan = await stripe.plans.create({
             interval: 'month',
             amount: plan.amount,
-            currency: 'usd',
+            currency: 'eur',
             nickname: plan.nickname,
             product: {
               name: plan.name,
@@ -174,7 +174,7 @@ class Plan extends Model {
           // Create a metered plan
           createdPlan = await stripe.plans.create({
             interval: 'month',
-            currency: 'usd',
+            currency: 'eur',
             nickname: plan.nickname,
             product: {
               name: plan.name,

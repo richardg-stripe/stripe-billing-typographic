@@ -151,9 +151,9 @@ export default {
         return null;
       }
       // Format the number as currency
-      const formatter = new Intl.NumberFormat('en-US', {
+      const formatter = new Intl.NumberFormat('en-IE', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'eur',
       });
       const estimate = store.nextBillingEstimate;
       if (estimate) {
