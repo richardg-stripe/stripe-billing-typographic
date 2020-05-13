@@ -6,7 +6,7 @@
         <h2>Plan</h2>
         <div class="details">
           <template v-if="plan">
-          <p>{{plan.name}}, ${{plan.rate}} per month</p>
+          <p>{{plan.name}}, €{{plan.rate}} per month</p>
             <ul>
               <li v-for="(feature, index) in plan.features" v-text="feature" :key="index" class="feature"></li>
             </ul>

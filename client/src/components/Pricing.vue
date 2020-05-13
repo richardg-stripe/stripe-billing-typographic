@@ -8,7 +8,7 @@
           <h3 v-if="activePlanId === plan.id">Current plan</h3>
           <h3 v-else-if="!activePlanId && matchingPlan.id === plan.id">Recommended</h3>
           <h1>{{plan.name}}</h1>
-          <h2>${{plan.rate}} per month</h2>
+          <h2>€{{plan.rate}} per month</h2>
           <ul class="features">
             <li v-for="(feature, index) in plan.features" v-text="feature" :key="index" class="feature"></li>
           </ul>

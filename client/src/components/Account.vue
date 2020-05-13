@@ -13,7 +13,7 @@
             You haven’t <a class="change-plan" @click.prevent="changePlan()">signed up</a> for a plan yet.
           </p>
           <template v-else>
-            <p>{{currentPlan.name}} plan, ${{currentPlan.rate}} per month</p>
+            <p>{{currentPlan.name}} plan, €{{currentPlan.rate}} per month</p>
             <ul>
               <li v-for="(feature, index) in currentPlan.features"
                   v-text="feature" :key="index" class="feature"></li>
